@@ -14,3 +14,26 @@ Text Domain: corazon
 Corazon WordPress Theme, (C) 2021 WordPress.org
 Corazon is distributed under the terms of the GNU GPL.
 */
+
+html {
+	font-size: 18px;
+}
+
+body {
+	font-size: 100%;
+	font-family: "Noto Serif", "Droid Serif", Georgia, serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.wp-block-query-loop h5 {
+	margin: 0;
+	font-weight: 400;
+}
+
+.wp-block-query-loop {
+	list-style: square;
+}
+
