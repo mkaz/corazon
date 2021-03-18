@@ -28,6 +28,10 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	color: tomato;
+}
+
 .wp-block-query-loop h5 {
 	margin: 0;
 	font-weight: 400;
@@ -37,3 +41,6 @@ a {
 	list-style: square;
 }
 
+body.home .wp-block-column {
+	margin-right: 2.0rem;
+}
