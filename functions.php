@@ -19,6 +19,7 @@ if ( ! function_exists( 'corazon_support' ) ) :
 		add_theme_support( 'editor-styles' );
 
 		// Enqueue editor styles.
+		add_editor_style( 'editor.css' );
 		add_editor_style( 'style.css' );
 
 		// Add support for custom units.
@@ -35,7 +36,5 @@ function corazon_scripts() {
 	// Enqueue theme stylesheet.
 	wp_enqueue_style( 'corazon-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
 
-	// Enqueue alignments stylesheet.
-	/* wp_enqueue_style( 'corazon-alignments-style', get_template_directory_uri() . '/assets/alignments-front.css', array(), wp_get_theme()->get( 'Version' ) ); */
 }
 add_action( 'wp_enqueue_scripts', 'corazon_scripts' );

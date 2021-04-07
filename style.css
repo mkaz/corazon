@@ -17,6 +17,7 @@ Corazon is distributed under the terms of the GNU GPL.
 
 html {
 	font-size: 16px;
+	line-height: 1.5;
 }
 
 body {
@@ -32,17 +33,94 @@ a:hover {
 	color: tomato;
 }
 
+figure, img {
+	height: auto;
+}
+
+/* post title in query loop */
 .wp-block-query-loop h5 {
+	display: inline-block;
 	margin: 0;
+	font-size: 1.0rem;
 	font-weight: 400;
 }
 
 .wp-block-query-loop {
 	list-style: none;
+<<<<<<< HEAD
+=======
+	margin: 0;
+	padding: 0;
+	overflow-x:hidden;
 }
 
-body.home .wp-block-column {
-	margin-right: 2.0rem;
+.wp-block-query-loop li {
+	display: flex;
+	margin-bottom: 0.25rem;
+}
+
+/* fancy dots on listings, relies on overflow hidden */
+body.home .wp-block-query-loop li::after {
+	content: ".............................................." ".............................................." ".............................................." "........";
+	float: left;
+	width: 0;
+	padding-left: 5px;
+	letter-spacing: 2px;
+}
+
+h3.wp-block-site-title {
+	font-size: 3.0rem;
+	margin: 3.0rem 0 0.5rem 0;
+	border-bottom: 0;
+}
+
+.border-btm-4 {
+	padding-bottom: 0;
+	margin-bottom: 4.0rem;
+	border-bottom: 0.375rem solid #333;
+}
+
+.border-btm-2 {
+	padding-bottom: 0;
+	margin-bottom: 0.5rem;
+	border-bottom: 2px solid #333;
+}
+
+.border-btm-1 {
+	padding-bottom: 0;
+	margin-bottom: 0.5rem;
+	border-bottom: 1px solid #333;
+}
+
+article h1 {
+	font-size: 3rem;
+	line-height: 1.0;
+	border-bottom: 4px solid #333;
+	margin-top: 3.0rem;
+	margin-bottom: 2.0rem;
+}
+
+.entry-content h2 {
+	border-bottom: 2px solid #333;
+	margin-top: 2.0rem;
+	margin-bottom: 8px;
+}
+
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+	border-bottom: 1px solid #333;
+	margin-top: 2.0rem;
+	margin-bottom: 8px;
+}
+
+.entry-content p {
+	margin: 1.5rem 0;
+}
+
+.entry-content figure {
+	margin: 2.5rem 0;
 }
 
 .margin-bottom-none {
