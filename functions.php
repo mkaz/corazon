@@ -36,6 +36,6 @@ function corazon_scripts() {
 	wp_enqueue_style( 'corazon-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
 
 	// Enqueue alignments stylesheet.
-	wp_enqueue_style( 'corazon-alignments-style', get_template_directory_uri() . '/assets/alignments-front.css', array(), wp_get_theme()->get( 'Version' ) );
+	/* wp_enqueue_style( 'corazon-alignments-style', get_template_directory_uri() . '/assets/alignments-front.css', array(), wp_get_theme()->get( 'Version' ) ); */
 }
 add_action( 'wp_enqueue_scripts', 'corazon_scripts' );

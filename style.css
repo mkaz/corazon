@@ -16,12 +16,12 @@ Corazon is distributed under the terms of the GNU GPL.
 */
 
 html {
-	font-size: 18px;
+	font-size: 16px;
 }
 
 body {
 	font-size: 100%;
-	font-family: "Noto Serif", "Droid Serif", Georgia, serif;
+	font-family: Roboto, sans-serif;
 }
 
 a {
@@ -38,9 +38,26 @@ a:hover {
 }
 
 .wp-block-query-loop {
-	list-style: square;
+	list-style: none;
 }
 
 body.home .wp-block-column {
 	margin-right: 2.0rem;
+}
+
+.margin-bottom-none {
+	margin-bottom: 0;
+}
+
+.border-btm-4 {
+	border-bottom: 4px solid #333;
+}
+
+.border-btm-2 {
+	border-bottom: 2px solid #333;
+}
+
+.border-btm-1 {
+	border-bottom: 1px solid #333;
+	margin-bottom: 0;
 }
