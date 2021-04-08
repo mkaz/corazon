@@ -1,11 +1,14 @@
 <!-- wp:template-part {"slug":"header","theme":"corazon","tagName":"header","layout":{"inherit":true}} /-->
 
-<!-- wp:group {"tagName":"article","layout":{"inherit":true}} -->
+<!-- wp:group {"tagName":"article","layout":{"inherit":false}} -->
 <article class="wp-block-group">
 
-	<!-- wp:post-title {"level":1} /-->
+	<!-- wp:group {"layout":{"inherit":true}} -->
+	<div class="wp-block-group"><!-- wp:post-title {"level":1} /--></div>
+	<!-- /wp:group -->
 
-	<!-- wp:post-content /-->
+	<!-- wp:post-content {"layout":{"inherit":true}} /-->
+
 
 </article>
 <!-- /wp:group -->
