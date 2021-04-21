@@ -37,24 +37,17 @@ figure, img {
 	height: auto;
 }
 
-/* post title in query loop */
-.wp-block-query-loop h5 {
-	display: inline-block;
-	margin: 0;
-	font-size: 1.0rem;
-	font-weight: 400;
-}
-
-.wp-block-query-loop {
+body.home .wp-block-query-loop {
 	list-style: none;
-	margin: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 	padding: 0;
 	overflow-x:hidden;
 }
 
-.wp-block-query-loop li {
+body.home .wp-block-query-loop li {
 	display: flex;
-	margin-bottom: 0.25rem;
+	margin-bottom: 0;
 }
 
 /* fancy dots on listings, relies on overflow hidden */
@@ -65,6 +58,25 @@ body.home .wp-block-query-loop li::after {
 	padding-left: 5px;
 	letter-spacing: 2px;
 }
+
+.archive .wp-block-query-loop li {
+	padding-bottom: 2.0rem;
+	margin-bottom: 2.0rem;
+	border-bottom: 1px solid #999;
+}
+
+.archive .wp-block-query-loop h2 {
+	margin-bottom: 0;
+}
+
+/* post title in query loop */
+.wp-block-query-loop h5 {
+	display: inline-block;
+	margin: 0;
+	font-size: 1.0rem;
+	font-weight: 400;
+}
+
 
 h3.wp-block-site-title {
 	font-size: 3.0rem;

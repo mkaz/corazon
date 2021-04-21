@@ -2,14 +2,14 @@
 
 <!-- wp:group {"tagName":"main","layout":{"inherit":true}} -->
 <main class="wp-block-group">
-
-<!-- wp:query {"queryId":25,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","categoryIds":[],"tagIds":[15],"order":"asc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false}} -->
-<!-- wp:query-loop -->
-<!-- wp:post-title /-->
-
-<!-- wp:post-date /-->
-<!-- /wp:query-loop -->
-<!-- /wp:query --></main>
+	<!-- wp:query {"queryId":25,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","categoryIds":[],"tagIds":[15],"order":"asc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false}} -->
+		<!-- wp:query-loop -->
+			<!-- wp:post-title {"isLink":true} /-->
+			<!-- wp:post-date /-->
+			<!-- wp:post-excerpt /-->
+		<!-- /wp:query-loop -->
+	<!-- /wp:query -->
+</main>
 <!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer","theme":"corazon","tagName":"footer","layout":{"inherit":false}} /-->
