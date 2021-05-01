@@ -16,13 +16,14 @@ Corazon is distributed under the terms of the GNU GPL.
 */
 
 html {
-	font-size: 16px;
-	line-height: 1.5;
+	font-size: 18px;
+	font-family: 'Noto Serif', Georgia, serif;
+	line-height: 1.6;
 }
 
 body {
-	font-size: 100%;
-	font-family: Roboto, sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
 a {
@@ -35,6 +36,10 @@ a:hover {
 
 figure, img {
 	height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 700;
 }
 
 body.home .wp-block-query-loop {
@@ -103,15 +108,14 @@ h3.wp-block-site-title {
 }
 
 article h1 {
-	font-size: 3rem;
+	font-size: 2rem;
 	line-height: 1.0;
-	border-bottom: 4px solid #333;
 	margin-top: 3.0rem;
 	margin-bottom: 2.0rem;
 }
 
 .entry-content h2 {
-	border-bottom: 2px solid #333;
+	border-bottom: 1px solid #AAA;
 	margin-top: 2.0rem;
 	margin-bottom: 8px;
 }
@@ -120,7 +124,7 @@ article h1 {
 .entry-content h4,
 .entry-content h5,
 .entry-content h6 {
-	border-bottom: 1px solid #333;
+	border-bottom: 1px solid #CCC;
 	margin-top: 2.0rem;
 	margin-bottom: 8px;
 }
