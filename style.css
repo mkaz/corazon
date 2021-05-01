@@ -103,12 +103,15 @@ body.home .wp-block-query-loop li::after {
 	font-weight: var(--base-font-weight);
 }
 
-.wp-block-query-loop h5 a {
+.wp-block-query-loop h5 a,
+.wp-block-query-loop h5 a:visited {
 	color: var(--color-text);
+	border: none;
 }
 
 .wp-block-query-loop h5 a:hover {
 	color: var(--color-hover);
+	border: none;
 }
 
 header {
