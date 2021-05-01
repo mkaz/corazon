@@ -30,12 +30,19 @@ endif;
  */
 function corazon_scripts() {
 
-	// Enqueue theme stylesheet.
-	wp_enqueue_style( 'corazon-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
-
+	// Fonts
 	wp_enqueue_style(
 		'corazon-font-style',
-		'https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap'
+		get_template_directory_uri() . '/assets/fonts.css',
 	);
+
+	// Enqueue theme stylesheet.
+	wp_enqueue_style(
+		'corazon-style',
+		get_template_directory_uri() . '/style.css',
+		array(),
+		wp_get_theme()->get( 'Version' )
+	);
+
 }
 add_action( 'wp_enqueue_scripts', 'corazon_scripts' );
