@@ -1,26 +1,25 @@
 <!-- wp:template-part {"slug":"header","theme":"corazon","tagName":"header","layout":{"inherit":true}} /-->
 
-
-<!-- wp:cover {"url":"http://localhost:7000/wp-content/uploads/2020/07/driving-compress.mp4","id":37,"backgroundType":"video","contentPosition":"bottom left","style":{"color":{"duotone":["#c7005a","#fff278"]}}} -->
-<div class="wp-block-cover has-background-dim has-custom-content-position is-position-bottom-left"><video class="wp-block-cover__video-background intrinsic-ignore" autoplay muted loop playsinline src="http://localhost:7000/wp-content/uploads/2020/07/driving-compress.mp4" data-object-fit="cover"></video><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"left","placeholder":"Write title…","fontSize":"large"} -->
-<p class="has-text-align-left has-large-font-size">1960 Austin-Healey "Bugeye" Sprite MK1</p>
+<!-- wp:group {"tagName":"main","layout":{"inherit":true}} -->
+<main class="wp-block-group"><!-- wp:cover {"url":"http://localhost:7000/wp-content/uploads/2020/07/driving-compress.mp4","id":37,"backgroundType":"video","contentPosition":"bottom left","align":"full","style":{"color":{"duotone":["#c7005a","#fff278"]}}} -->
+<div class="wp-block-cover alignfull has-background-dim has-custom-content-position is-position-bottom-left"><video class="wp-block-cover__video-background intrinsic-ignore" autoplay muted loop playsinline src="http://localhost:7000/wp-content/uploads/2020/07/driving-compress.mp4" data-object-fit="cover"></video><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size">Austin-Healey "Bugeye" Sprite</p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:cover -->
 
-<!-- wp:spacer {"height":60} -->
-<div style="height:60px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer -->
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:group {"tagName":"main","layout":{"inherit":true}} -->
-<main class="wp-block-group">
-	<!-- wp:query {"queryId":23,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","categoryIds":[],"tagIds":[],"order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true}} -->
-		<!-- wp:query-loop -->
-			<!-- wp:post-title {"isLink":true} /-->
-			<!-- wp:post-date /-->
-			<!-- wp:post-excerpt /-->
-		<!-- /wp:query-loop -->
-	<!-- /wp:query -->
-</main>
+<!-- wp:query {"queryId":23,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","categoryIds":[],"tagIds":[],"order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true}} -->
+<!-- wp:query-loop -->
+<!-- wp:post-title {"isLink":true} /-->
+
+<!-- wp:post-date /-->
+
+<!-- wp:post-excerpt /-->
+<!-- /wp:query-loop -->
+<!-- /wp:query --></main>
 <!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer","theme":"corazon","tagName":"footer","layout":{"inherit":false}} /-->
