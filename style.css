@@ -24,6 +24,12 @@ Corazon is distributed under the terms of the GNU GPL.
 	--base-font-family: Adelle, 'Noto Serif', serif;
 	--base-font-weight: 300;
 	--base-font-bold: 500;
+	--color-corazon-red:    #FF595E;
+	--color-corazon-yellow: #FFCA3A;
+	--color-corazon-green:  #8AC926;
+	--color-corazon-blue:   #1982C4;
+	--color-corazon-purple: #6A4C93;
+	--color-corazon-grey:   #5e6472;
 }
 
 html {
@@ -203,4 +209,27 @@ article h1 {
 
 .wp-block-embed figcaption {
 	font-size: 15px;
+}
+
+
+/* default grey */
+header {
+	background-color: var(--color-corazon-purple);
+}
+
+
+body.category-misc header {
+	background-color: var(--color-corazon-green);
+}
+
+body.category-wordpress header {
+	background-color: var(--color-corazon-blue);
+}
+
+body.category-code header {
+	background-color: var(--color-corazon-yellow);
+}
+
+body.category-dataviz header {
+	background-color: var(--color-corazon-red);
 }

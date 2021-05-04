@@ -28,7 +28,7 @@ endif;
 /**
  * Enqueue scripts and styles.
  */
-function corazon_scripts() {
+add_action( 'wp_enqueue_scripts', function() {
 
 	// Fonts
 	wp_enqueue_style(
@@ -44,5 +44,15 @@ function corazon_scripts() {
 		wp_get_theme()->get( 'Version' )
 	);
 
-}
-add_action( 'wp_enqueue_scripts', 'corazon_scripts' );
+} );
+
+add_filter('body_class', function ( $classes ) {
+	if ( is_single() ) {
+		global $post;
+		foreach ( ( get_the_category( $post->ID ) ) as $category ) {
+			$classes[] = 'category-' . $category->category_nicename;
+		}
+	}
+    return $classes;
+} );
+
