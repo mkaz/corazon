@@ -47,7 +47,6 @@ body {
 
 a {
 	color: var(--color-link);
-	border-bottom: 1px solid var(--color-link);
 }
 
 a:visited {
@@ -57,7 +56,6 @@ a:visited {
 
 a:hover {
 	color: var(--color-hover);
-	border-bottom: 1px solid var(--color-hover);
 }
 
 figure, img {
@@ -113,11 +111,13 @@ body.home .wp-block-query-loop li::after {
 .wp-block-query-loop h5 a:visited {
 	color: var(--color-text);
 	border: none;
+	text-decoration: none;
 }
 
 .wp-block-query-loop h5 a:hover {
 	color: var(--color-hover);
 	border: none;
+	text-decoration: none;
 }
 
 main {
